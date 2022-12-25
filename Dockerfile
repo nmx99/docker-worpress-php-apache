@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM wordpress:php8.2-apache
+FROM wordpress:php8.2-apache
 
 RUN pecl install redis \
     && docker-php-ext-enable redis \
